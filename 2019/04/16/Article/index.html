@@ -79,7 +79,7 @@
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -97,16 +97,16 @@
 
 
   <meta name="description" content="MyBatis 先了解ORM 思想  ●对象关系映射（Object Relational Mapping，简称ORM）：1234是为了解决面向对象与关系数据库存在的互不匹配的问题的技术。 简单的说，ORM是通过使用描述对象和数据库之间映射的元数据，将Java程序中的对象自动持久化到关系数据库中。 ●常见ORM框架1231.JPA：本身是一种ORM规范,不是ORM框架。由各大ORM框架提供实现。2.">
-<meta name="keywords" content="随心随想，技术无边，回头是岸！">
+<meta name="keywords" content="java,框架">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Article">
+<meta property="og:title" content="MyBatis 的初步学习">
 <meta property="og:url" content="http://yoursite.com/2019/04/16/Article/index.html">
 <meta property="og:site_name" content="Lynn&#39;s blog">
 <meta property="og:description" content="MyBatis 先了解ORM 思想  ●对象关系映射（Object Relational Mapping，简称ORM）：1234是为了解决面向对象与关系数据库存在的互不匹配的问题的技术。 简单的说，ORM是通过使用描述对象和数据库之间映射的元数据，将Java程序中的对象自动持久化到关系数据库中。 ●常见ORM框架1231.JPA：本身是一种ORM规范,不是ORM框架。由各大ORM框架提供实现。2.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-16T14:29:09.147Z">
+<meta property="og:updated_time" content="2019-04-17T03:12:05.334Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Article">
+<meta name="twitter:title" content="MyBatis 的初步学习">
 <meta name="twitter:description" content="MyBatis 先了解ORM 思想  ●对象关系映射（Object Relational Mapping，简称ORM）：1234是为了解决面向对象与关系数据库存在的互不匹配的问题的技术。 简单的说，ORM是通过使用描述对象和数据库之间映射的元数据，将Java程序中的对象自动持久化到关系数据库中。 ●常见ORM框架1231.JPA：本身是一种ORM规范,不是ORM框架。由各大ORM框架提供实现。2.">
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>Article | Lynn's blog</title>
+  <title>MyBatis 的初步学习 | Lynn's blog</title>
   
 
 
@@ -228,6 +228,57 @@
         
         
           
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives">
 
     
@@ -301,7 +352,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lynn">
-      <meta itemprop="description" content="爱我你就抱抱我！">
+      <meta itemprop="description" content="技术无边，回头是岸">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -314,7 +365,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Article
+          <h1 class="post-title" itemprop="name headline">MyBatis 的初步学习
 
               
             
@@ -340,20 +391,63 @@
                 
               
 
-              <time title="创建时间：2019-04-16 17:51:15 / 修改时间：22:29:09" itemprop="dateCreated datePublished" datetime="2019-04-16T17:51:15+08:00">2019-04-16</time>
+              <time title="创建时间：2019-04-16 17:51:15" itemprop="dateCreated datePublished" datetime="2019-04-16T17:51:15+08:00">2019-04-16</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-17 11:12:05" itemprop="dateModified" datetime="2019-04-17T11:12:05+08:00">2019-04-17</time>
               
             
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
             
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/04/16/Article/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/16/Article/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -434,7 +528,7 @@
 <p>最后来一个测试类</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">* @author Lynn</span><br><span class="line">* @date 2018年5月27日 下午10:04:12</span><br><span class="line">* @telPhone 18633095352</span><br><span class="line">* @description  创建测试类对增删改查等功能进行测试</span><br><span class="line">*/</span><br><span class="line">public class IManDAOTest &#123;</span><br><span class="line">//创建实现类对象</span><br><span class="line">IManDAO man= new ManImpl();</span><br><span class="line"></span><br><span class="line">@Test // 测试插入功能</span><br><span class="line">public void testSave() &#123;</span><br><span class="line">man.save(new Man(2L,&quot;陈佳权&quot;,16));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Test // 测试删除功能</span><br><span class="line">public void testDelete() &#123;</span><br><span class="line">man.delete(11L);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Test // 测试修改功能</span><br><span class="line">public void testUpdate() &#123;</span><br><span class="line">man.update(10L, new Man(null,&quot;陈佳权&quot;,19));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Test // 测试查询单个功能</span><br><span class="line">public void testSelectOne() &#123;</span><br><span class="line">Man man2 = man.selectOne(10L);</span><br><span class="line">System.out.println(man2);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Test // 测试查询所有数据的功能</span><br><span class="line">public void testSelectList() &#123;</span><br><span class="line">List&lt;Man&gt; list = man.selectList();</span><br><span class="line">list.forEach(System.out::println);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line">* 小结：1.测试类只是验证某一个功能是否可以正常运行并得出正确结果。</span><br><span class="line">* */</span><br></pre></td></tr></table></figure>
-<p>@ 作者  Lynn  email：<a href="mailto:1091412436@qq.com" target="_blank" rel="noopener">1091412436@qq.com</a>  </p>
+<p>@ 作者  Lynn  email：<a href="mailto:1091412436@qq.com" target="_blank" rel="noopener">1091412436@qq.com</a></p>
 
       
     </div>
@@ -456,11 +550,35 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+            <a href="/tags/框架/" rel="tag"># 框架</a>
+          
+        </div>
+      
 
       
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/17/python/" rel="prev" title="python">
+                python <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -478,6 +596,13 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
 
   
 
@@ -515,8 +640,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Lynn">
+            
               <p class="site-author-name" itemprop="name">Lynn</p>
-              <div class="site-description motion-element" itemprop="description">爱我你就抱抱我！</div>
+              <div class="site-description motion-element" itemprop="description">技术无边，回头是岸</div>
           </div>
 
           
@@ -526,14 +653,54 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -542,6 +709,32 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/lynner-haode" title="GitHub &rarr; https://github.com/lynner-haode" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:javalynn@163.com" title="E-Mail &rarr; mailto:javalynn@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
           
 
           
@@ -601,15 +794,9 @@
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
 
 
 
@@ -661,6 +848,12 @@
 
 
 
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
@@ -723,6 +916,29 @@
   
 
   
+  
+  <script id="dsq-count-scr" src="https://library.disqus.com/count.js" async></script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2019/04/16/Article/";
+    this.page.identifier = "2019/04/16/Article/";
+    this.page.title = 'MyBatis 的初步学习';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://library.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
+
+
+
 
 
   
